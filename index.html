@@ -59,9 +59,11 @@
   <h2>3. Apple Health (HealthKit)</h2>
   <p>If you grant permission, VOREX interacts with Apple Health as follows:</p>
   <ul>
-    <li><strong>Reads (on-device only):</strong> heart-rate variability, resting heart rate, and sleep,
-      used solely to calculate a “recovery readiness” indicator. This processing happens on your device.
-      <strong>This health data is never stored in iCloud and is never sent to us or any third party.</strong></li>
+    <li><strong>Reads (on-device only):</strong> heart-rate variability, resting heart rate, and sleep
+      (to calculate a “recovery readiness” indicator), and — on Apple Watch — your heart rate and active
+      energy during a workout (shown live and saved with that workout). This processing happens on your
+      device. <strong>This health data is never stored in iCloud and is never sent to us or any third
+      party.</strong></li>
     <li><strong>Writes (one-way):</strong> your completed workouts, and the bodyweight you enter in the
       App, can be saved to Apple Health so they appear in the Health app. VOREX does not read your
       bodyweight back from Apple Health.</li>
@@ -81,11 +83,17 @@
       <em>public</em> database.</li>
     <li><strong>Friends:</strong> if you opt in by adding a friend via a friend code, your display name
       and your weekly training volume are shared with the friends you connect with.</li>
+    <li><strong>Reporting &amp; blocking:</strong> to keep the community safe, you can block other
+      users (your block list is stored and synced across your own devices) and report objectionable
+      display names. When you submit a report, we store a record — your and the reported user’s account
+      identifier and the reason — in the CloudKit public database so we can review and act on it.</li>
   </ul>
   <p>
-    You can leave these features at any time from within the App. Leaving stops further sharing and
-    removes the entries you have published. The bodyweight used here is the value you enter in VOREX,
-    not data read from Apple Health.
+    These social records are associated with an identifier from your iCloud account (a CloudKit user
+    record ID) so that ranking, friend connections, and blocking work. You can leave the leaderboard or
+    Friends at any time from within the App, which stops further sharing and removes the entries you
+    have published; reports you have submitted may be retained for safety and moderation. The bodyweight
+    used here is the value you enter in VOREX, not data read from Apple Health.
   </p>
 
   <h2>5. Subscriptions and payments</h2>
@@ -115,7 +123,8 @@
     Your data remains until you delete it. You can export your full training history as a CSV file, and
     you can permanently erase everything using <strong>Reset All Data</strong> in the App’s Settings.
     Reset All Data deletes your data from the device and from your iCloud, and — if you used the social
-    features — also removes the records you published to the leaderboard and Friends boards.
+    features — also removes the records you published to the leaderboard and Friends boards. Reports you
+    submitted may be retained for safety and moderation.
   </p>
 
   <h2>9. Your rights</h2>
