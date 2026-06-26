@@ -33,12 +33,14 @@
     This Privacy Policy explains how VOREX (the “App”), provided by Jeremy Rodriguez, an independent
     developer operating under the name Verntro Labs (“we,” “us,” or “our”), handles your information.
     For data-protection purposes, the data controller is Jeremy Rodriguez. VOREX is a strength-training
-    tracker for iPhone and Apple Watch. We designed VOREX to keep your data in your own hands: it is stored on your device and in
-    <strong>your</strong> private Apple iCloud, and we do not operate our own servers or user accounts.
+    tracker for iPhone and Apple Watch. We designed VOREX to keep your core training data in your own
+    hands: it is stored on your device and in <strong>your</strong> private Apple iCloud. The optional
+    <strong>social features</strong> (the Community tab — feed, friends, crews, and leaderboards) are the
+    exception: they require a VOREX account and use a backend provider (Supabase) — see Section 4.
   </p>
 
   <h2>1. Information in the App</h2>
-  <p>VOREX does not require you to create an account or give us your name, email, or phone number. The information in the App consists of:</p>
+  <p>The core App does not require an account or your name, email, or phone number. (The optional social features require a VOREX account — see Section 4.) The information in the App consists of:</p>
   <ul>
     <li><strong>Profile you set:</strong> a display name you choose.</li>
     <li><strong>Training data you log:</strong> workouts, sets, weights, reps, routines, personal records, achievements, and the bodyweight and body measurements you enter.</li>
@@ -52,7 +54,8 @@
     Your training data and profile are stored on your device and synced through <strong>your private
     iCloud</strong> (Apple’s CloudKit private database), tied to your Apple ID, so it stays available
     across your own Apple devices. This is your personal iCloud space — <strong>we cannot see or access
-    it.</strong> We do not run our own backend, and we do not copy your data to servers we control.
+    it.</strong> We do not copy this core training data to servers we control. (Data you choose to share
+    through the optional social features is the exception, and is stored on our backend — see Section 4.)
     Your profile photo and progress photos are stored the same way — on your device and in your private
     iCloud only. They are <strong>never</strong> uploaded to us or any third party, and they are not
     written to Apple Health.
@@ -79,26 +82,34 @@
     Privacy &amp; Security › Health.
   </p>
 
-  <h2>4. Optional social features</h2>
-  <p>These features are <strong>off by default</strong> and only share data if you turn them on:</p>
+  <h2>4. Social features (optional — a VOREX account)</h2>
+  <p>
+    The <strong>Community</strong> tab is optional. To use it you create a VOREX account with
+    <strong>Sign in with Apple</strong>. When you do, the following is stored on our backend provider,
+    <strong>Supabase Inc.</strong>, which processes it on our behalf as our data processor:
+  </p>
   <ul>
-    <li><strong>Community leaderboard:</strong> if you opt in, your display name, your estimated
-      one-rep-max for board lifts, and — for the bodyweight-relative board — your bodyweight are
-      published to a leaderboard visible to other VOREX users. This is shared through Apple’s CloudKit
-      <em>public</em> database.</li>
-    <li><strong>Friends:</strong> if you opt in by adding a friend via a friend code, your display name
-      and your weekly training volume are shared with the friends you connect with.</li>
-    <li><strong>Reporting &amp; blocking:</strong> to keep the community safe, you can block other
-      users (your block list is stored and synced across your own devices) and report objectionable
-      display names. When you submit a report, we store a record — your and the reported user’s account
-      identifier and the reason — in the CloudKit public database so we can review and act on it.</li>
+    <li>your chosen <strong>username and display name</strong>;</li>
+    <li><strong>posts, comments, and reactions</strong> you create;</li>
+    <li>your <strong>friends and crew memberships</strong>;</li>
+    <li>if you opt in to the leaderboard, your <strong>best estimated one-rep-max per lift and your
+      bodyweight</strong> — the value you enter in VOREX, never read from Apple Health.</li>
   </ul>
   <p>
-    These social records are associated with an identifier from your iCloud account (a CloudKit user
-    record ID) so that ranking, friend connections, and blocking work. You can leave the leaderboard or
-    Friends at any time from within the App, which stops further sharing and removes the entries you
-    have published; reports you have submitted may be retained for safety and moderation. The bodyweight
-    used here is the value you enter in VOREX, not data read from Apple Health.
+    <strong>Apple Health data is never sent to the backend.</strong> Your HRV, sleep, and heart rate stay
+    on your device and are used only for on-device recovery scoring (Section 3).
+  </p>
+  <p>
+    Other VOREX users can see your username, display name, the content you post, and — if you opt in —
+    your leaderboard entry. To keep the community safe you can <strong>block</strong> users and
+    <strong>report</strong> posts, comments, or display names; reports are stored for safety and
+    moderation review. You can <strong>delete your account</strong> at any time
+    (Profile › Delete account), which permanently removes your profile, posts, comments, friends, crews,
+    and leaderboard entries from the backend.
+  </p>
+  <p>
+    Supabase may process this data in the United States. Sign in with Apple may give us an Apple
+    private-relay email address; we do not receive your real email unless you choose to share it.
   </p>
 
   <h2>5. Subscriptions and payments</h2>
@@ -113,8 +124,10 @@
   <p>
     VOREX contains <strong>no third-party advertising, analytics, or tracking SDKs</strong>. We do not
     track you across apps or websites, we do not sell or “share” your personal information for
-    cross-context behavioral advertising, and we do not profile you for ads. The only external services
-    involved are Apple’s (iCloud/CloudKit, HealthKit, and App Store payments), used to provide the App.
+    cross-context behavioral advertising, and we do not profile you for ads. The external services we use
+    are Apple’s (iCloud/CloudKit, HealthKit, and App Store payments) and — for the optional social
+    features only — <strong>Supabase</strong>, our backend processor (Section 4). All are used solely to
+    provide the App.
   </p>
 
   <h2>7. Notifications</h2>
@@ -127,8 +140,9 @@
   <p>
     Your data remains until you delete it. You can export your full training history as a CSV file, and
     you can permanently erase everything using <strong>Reset All Data</strong> in the App’s Settings.
-    Reset All Data deletes your data from the device and from your iCloud, and — if you used the social
-    features — also removes the records you published to the leaderboard and Friends boards. Reports you
+    Reset All Data deletes your data from the device and from your iCloud. If you created a social
+    account, <strong>Profile › Delete account</strong> permanently removes it and all your social data
+    (profile, posts, comments, friends, crews, and leaderboard entries) from the backend. Reports you
     submitted may be retained for safety and moderation.
   </p>
 
